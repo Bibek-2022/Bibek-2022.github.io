@@ -1,0 +1,692 @@
+/* ****** Blank Bootstrap 4.5 starting template for 101922, Web & Time Based Design */
+
+/* Custom styles to overide and add to Bootstrap 4.5 css */
+
+/* starter template section */
+
+body{
+  background-color: #F5F3F2;
+}
+
+/* navbar CSS generator: https://work.smarchal.com/twbscolor/ */
+.navbar{
+	background: white;
+ 
+	}
+
+  .navbar li{
+    color: white;
+  }
+
+.nav-link , .navbar-brand{
+	color: white;
+	cursor: pointer;
+}
+
+.nav-link{
+	margin-right: 1rem !important;
+
+}
+
+.nav-link:hover{
+	background: none;
+	color: white;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+	background: none;
+	color: white;
+  padding: 5px;
+}
+
+.navbar-collapse {
+ justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background: grey !important;
+	color: white;
+}
+
+
+/* If not useing a generator use a simple class like this - as applied in HTML */
+/* .nav_bg {
+  background-color: rgba(255, 90, 50, 1);
+} */
+
+/* Examples of adding to Bootstrap classes with your own classes */
+.starter-template {
+  padding: 3rem 1.5rem;
+}
+.starter-template h2{
+  text-transform: uppercase;
+  color: rgba(86, 61, 255, .75);
+}
+
+/* -------------------------------------------------------- */
+/* Custom CSS for highlighting grid examples and options - Not essential to use in your own design.*/
+
+/* column highlighting and content spacing */
+.row {
+  margin-bottom: 0;
+}
+
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(10, 10, 10, .15);
+  border: 1px solid rgba(86, 61, 255, .2);
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+	background: maroon;
+	height: 5px;
+border: 0;
+}
+
+.col {
+background: white;
+}
+
+/* -------------------------------------------------------- */
+
+/* sets the default rem size for an entire page (for all sizing to be relative to) */
+
+html {
+  font-size: 1rem;
+}
+
+/* Examples of customising Bootstrap's media queries at different 'snapping' points - for example, change the size of your browser window and watch the <p> text colour change. Don't EVER change the pixel variables or you will be creating snapping points between Bootstrap's default snapping points - just add your styles in the brackets of the @media queries*/
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  p{
+    color: black;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  p{
+    color: black;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  p{
+    color: black;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  p{
+    color: black;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  p{
+    color: black;
+  }
+}
+
+/* -------------------------------------------------------- */
+
+/* Resume template specific styles  */
+
+.jumbotron{
+  margin-bottom: 0;
+  background: grey;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+	}
+
+h1 {
+	 color: transparent;
+   text-align: center;
+	 font-weight: 700;
+	 padding-top: .5rem;
+	 padding-bottom: 1rem;
+	 font-size: 3rem;
+	 animation: effect 5s linear infinite;
+}
+
+@keyframes effect {
+					 0% {
+							 background: linear-gradient(
+											 #F37A5E, black);
+							 -webkit-background-clip: text;
+					 }
+
+					 100% {
+							 background: linear-gradient(
+											 black, #F37A5E);
+							 -webkit-background-clip: text;
+					 }
+			 }
+
+
+h2 {
+  color: maroon;
+padding-top: .5rem;
+font-size: 2.5rem;
+}
+
+h3 {
+  padding-bottom: 0.3rem;
+  padding-top: 1rem;
+	color: maroon;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+color: maroon;
+}
+
+p, ul, ol, li, a {
+font-family: 'Roberto', sans-serif;
+color: maroon;
+font-weight: bold;
+}
+
+p.intro {
+	color: maroon;
+	font-size: 1.1em;
+	padding-top: 1em;
+	text-align: left;
+}
+
+/*header style*/
+.header{
+	position: relative;
+	background-size: cover;
+	background-position: center;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 450px;
+}
+
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: none;
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.description h1{
+	color: #33DDFF;
+  font-size: 4rem;
+}
+
+.description p {
+	color:#666;
+	font-size: 1.5rem;
+	width: 100%;
+	line-height: 1.5;
+  }
+
+.description button{
+	border: 1px solid maroon;
+	background: maroon;
+	color: #fff;
+  }
+
+  button a{
+  	color: #fff;
+        }
+
+    button a:hover {
+      color: maroon;
+      text-decoration: none;
+      }
+
+.col-8 {
+  border: 0;
+  border-left: 6px solid maroon;
+  padding-left: 3rem;
+}
+
+.col-4 {
+  padding-right: 3rem;
+}
+
+/* Contact Form */
+form {
+	padding-bottom: 3rem;
+}
+
+.contact-form{
+	margin: 3em 0;
+	position: relative;
+	  }
+
+.contact-form h2{
+	padding: 2em 1px;
+	color: maroon;
+  font-size: 3rem;
+  }
+
+.formstyle {
+  background: white;
+  border: 0;
+}
+
+.contact-form .right{
+	max-width: 600px;
+  border: 2px solid maroon;
+  background: maroon;
+}
+
+.contact-form .right .btn-secondary{
+	background: maroon;
+	color: #fff;
+	border: 0;
+}
+
+.contact-form .right .form-control::placeholder{
+	color: maroon;
+	font-size: 16px;
+}
+
+p.details {
+  line-height: .5rem;
+}
+
+/* Social Media icons */
+a.social {
+  color:  #6F2806;
+  text-decoration: none;
+}
+
+a.social:hover {
+  color: #ededef;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* span standout words */
+
+.standout {
+	color: maroon;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+
+/* LIGHTBOX starts here */
+.gallery-block{
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.gallery-block .heading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2{
+    font-size: 2.5rem;
+		font-family: 'Oswald', sans-serif;
+		color: black;
+		padding-top: .5rem;
+	text-align: center;
+}
+
+.gallery-block.compact-gallery .item{
+  overflow: hidden;
+  margin-bottom: 0;
+ margin-bottom: 20px;
+  opacity: 1;
+	background: white;
+	border: 0;
+}
+
+.gallery-block.compact-gallery .item .image{
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info{
+  position: relative;
+    display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description{
+  display: grid;
+	font-family: 'Oswald', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: maroon;
+    padding: 10px;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 1;
+    color: black;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body{
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.compact-gallery .item .description {
+    opacity: 0;
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+    opacity: 1;
+  }
+
+  .gallery-block .zoom-on-hover:hover .image {
+    transform: scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+/* LIGHTBOX Finish here */
+
+/* ACCORDIAN starts here */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: solid 1px maroon;
+  outline: none;
+  transition: 0.4s;
+	margin-bottom: 1em;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: grey;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+
+/* ACCORDIAN Finish here */
+
+/* ****** Blank Bootstrap 4.5 starting template for 101922, Web & Time Based Design */
+#cf {
+  position:relative;
+  
+  width:100%;
+  height: 300px;
+  margin:0 auto;
+
+}
+
+
+ .social-margin {
+  margin-right: 15px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+.social-icon {
+  margin-bottom: 15px;
+   box-sizing: border-box;
+  -moz-border-radius: 138px;
+  -webkit-border-radius: 138px;
+  border-radius: 138px;
+  border: 5px solid;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  line-height: 1px;
+  padding-top: 11px;
+  transition: all 0.5s;
+}
+.social-icon:hover {
+    transform: rotate(360deg)scale(1.3);
+  }
+  /* Facebook Button Styling */
+ .facebook {
+    font-size: 22px;
+    padding-top: 9px;
+    border-color: #3b5998;
+    background-color: #3b5998;
+    color: #ffffff;
+   
+  }
+  .facebook:hover {
+    background-color: #ffffff;
+    color: #3b5998;
+  }
+  /* Twitter Button Styling */
+.twitter {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 2px;
+    border-color: #55acee;
+    background-color: #55acee;
+    color: #ffffff;
+    
+  }
+  .twitter:hover {
+    background-color: #ffffff;
+    color: #55acee;
+  }
+  /* Google+ Button Styling */
+  .google-plus {
+    font-size: 22px;
+    padding-top: 9px;
+    padding-left: 2px;
+    background-color: #dd4b39;
+    color: #ffffff;
+    border-color: #dd4b39;
+    
+  }
+  .google-plus :hover {
+    background-color: #ffffff;
+    color: #dd4b39;
+  }
+  /* Linkedin Button Styling */
+  .linkedin {
+    font-size: 24px;
+    padding-top: 8px;
+    padding-left: 1px;
+    background-color: #0976b4;
+    color: #ffffff;
+    border-color: #0976b4;
+    
+  }
+  .linkedin :hover {
+    background-color: #ffffff;
+    color: #0976b4;
+  }
+  /* Pinterest Button Styling */
+.pinterest {
+    font-size: 22px;
+    padding-top: 9px;
+    background-color:  #cb2027;
+    color: #ffffff;
+    border-color:  #cb2027;
+    
+  }
+  .pinterest:hover {
+    background-color: #ffffff;
+    color:  #cb2027;
+  }
+  /* Behance Button Styling */
+  .behance {
+    font-size: 22px;
+    padding-top: 9px;
+    background-color: #1769ff;
+    color: #ffffff;
+    border-color: #1769ff;
+    
+  }
+  .behance :hover {
+    background-color: #ffffff;
+    color: #1769ff;
+  }
+
+  /* Github Button Styling */
+ .github {
+    font-size: 22px;
+    padding-top: 9px;
+    background-color: #4183c4;
+    color: #ffffff;
+    border-color: #4183c4;
+    
+  }
+  .github:hover {
+    background-color: #ffffff;
+    color: #4183c4;
+  }
+  /* Youtube Button Styling */
+ .youtube {
+    font-size: 22px;
+    padding-top: 9px;
+    padding-left: 0px;
+    background-color: #bb0000;
+    color: #ffffff;
+    border-color: #bb0000;
+    
+  }
+  .youtube  :hover {
+    background-color: #ffffff;
+    color: #bb0000;
+  }
+  /* Soundcloud Button Styling */
+  .soundcloud {
+    font-size: 22px;
+    padding-top: 9px;
+    padding-left: 0px;
+    background-color: #ff3a00;
+    color: #ffffff;
+    border-color: #ff3a00;
+    
+  }
+  .soundcloud :hover {
+    background-color: #ffffff;
+    color: #ff3a00;
+  }
+
+#wireframe .addimage {
+  width: 300px;
+  display: inline-block;
+
+
+}
+ 
+ .swap-on-hover {
+  position: relative; 
+  margin:  0 auto;
+  max-width: 100%;
+  
+}
+
+/* Select the image and make it absolute to the container */
+.swap-on-hover img {
+  position:absolute;
+  width:100%;
+  
+  left:0;
+ 
+  top:0;
+  left:0;
+  overflow: hidden;
+  /* Sets the width and height for the images*/
+ 
+}
+
+/* 
+  We set z-index to be higher than the back image, so it's alwyas on the front.
+
+We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+*/
+.swap-on-hover .swap-on-hover__front-image {
+  z-index: 9999;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+
+/* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+.swap-on-hover:hover > .swap-on-hover__front-image{
+  opacity: 0;
+}
+
+#cf .row {
+  border: 0px;
+}
+#cf img {
+  position:absolute;
+  width:100%;
+    height: 600px;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+img{
+  width: 600px;
+  border: 2px solid;
+  box-shadow: 2px 2px 2px 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+
